@@ -1,0 +1,350 @@
+@import 'reset.css';
+
+/* General + Re-usables */
+
+body{
+  width:100%;
+  font-family:'Roboto',sans-serif;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.upper{
+  text-transform:uppercase;
+}
+.blue{
+  color:#38a2ce;
+}
+
+/*Top bar + nav */
+
+nav{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  color:white;
+  background-color:#373e46;
+  padding:20px 0;
+}
+
+nav ul{
+  display:flex;
+  flex-direction:row;
+}
+
+nav ul li{
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+nav ul li:hover{
+  color:#38a2ce;
+  border-bottom:solid #38a2ce 2px;
+}
+
+#move{
+  padding-right:50px;
+}
+
+#reverse {
+  transform:rotatey(180deg);
+  transform-origin:left;
+  margin-left:20px;
+}
+
+.split img{
+  margin-left:15px;
+  max-width:15%;
+  max-height:15px;
+}
+
+
+/*First div aka topcontent */
+.backgroundz{
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../img/House.jpg');
+  background-size:cover;
+  height:450px;
+  background-repeat:no-repeat;
+  width:100%;
+  background-position: center center;
+  color:white;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  filter:grayscale(40%);
+}
+
+h1{
+  font-size:45px;
+  margin-top:-15%;
+  margin-bottom:1%;
+}
+h3{
+  font-size:20px;
+  margin-top:1%;
+  margin-bottom:2%;
+}
+
+.backgroundz p{
+  font-weight:bold;
+  border: solid #38a2ce 2px;
+  color:#38a2ce;
+  border-radius:5px;
+  padding:5px 25px;
+}
+
+.backgroundz p:hover{
+  color:white;
+  border:dotted white 2px;
+}
+
+
+/* 2nd Content div */
+
+.blintro{
+  height:220px;
+  background-color: #38a2ce;
+  color:#2a7999;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-size:17px;
+}
+.blintro p{
+  width:50%;
+  text-align:center;
+  margin-bottom:5px;
+}
+.blintro h2{
+  font-size:35px;
+  font-weight:thin;
+}
+
+/* Steps div */
+
+.steps{
+  background-color:#F7F7F7;
+  height:170px;
+  color:#a7b3b8;
+  padding:60px 0 10px 0;
+}
+
+.steps ul{
+  display:flex;
+  justify-content: space-around;
+  text-align:center;
+}
+
+.number{
+  color:white;
+  background-color:#a7b3b8;
+  font-size:35px;
+  border-radius:50%;
+  padding:10px 20px;
+
+}
+
+.steps h3{
+  margin-top:13%;
+  text-transform:capitalize;
+}
+.steps p{
+  opacity:0.8;
+}
+
+.but{
+  color:#38a2ce;
+  background-color:inherit;
+  border:solid #38a2ce 2px;
+  padding:6px 0px 7px 0px;
+  border-radius:100px;
+  margin-top:20px;
+  text-transform:uppercase;
+  font-weight:bold;
+  width:75%;
+  margin-left:1.5em;
+}
+
+
+/*Div with 2divs, left text & right image */
+
+
+.help{
+  height:650px;
+  display:flex;
+  justify-content:space-around;
+  flex-direction: row;
+  align-items:center;
+  margin: 0 20px;
+}
+
+.text{
+  width:45%;
+}
+h4{
+  font-size:25px;
+  padding-bottom:3%;
+  padding-top:10%;
+}
+h5{
+  font-size:18px;
+  font-weight:bold;
+  font-style:oblique;
+  padding-bottom:3%;
+}
+.text p{
+  color:grey;
+  opacity:0.9;
+  padding-bottom:4%;
+}
+.text a {
+  color:#50c8f5;
+  border-bottom:dotted #50c8f5 1px;
+}
+.text a:hover{
+  color:green;
+  border-bottom:solid #50c8f5 2px;
+  border-top:solid #50c8f5 2px;
+}
+
+.image{
+  width:45%;
+}
+.image img{
+  max-height:100%;
+  max-width:100%;
+}
+
+/*Sign up form div */
+
+.formdiv{
+     background-color:#373e46;
+     color:white;
+     display:flex;
+     justify-content:space-around;
+     height:200px;
+     align-items:center;
+}
+
+.texto{
+  font-size:25px;
+  text-transform:capitalize;
+  width:45%;
+}
+
+.form{
+  width:45%;
+}
+
+.container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+
+}
+
+input{
+  width:60%;
+  padding:8px 2px;
+  margin:2px 0;
+  border:none;
+  color:rgba(167, 179, 184, 0.8);
+}
+
+.signup{
+   margin-top:6px;
+   height:25px;
+   width:61%;
+   background-color:#38a2ce;
+   color:white;
+   border:none;
+   border-radius:2px;
+}
+
+.signup:hover{
+  background-color:white;
+  color:#38a2ce;
+  cursor:pointer;
+}
+
+.container {
+
+  background-color:#444d57;
+  border-radius:5px;
+}
+
+/* Div ith background image gradient over it & a bit of text cuz why not ayyyyyyyy */
+
+.blocksix{
+  height:400px;
+  background-image: linear-gradient( to right,rgba(113,206,239, 1), rgba(113, 206, 239, 0.5) ) , url('../img/facade.jpeg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+  padding-top:10px;
+  color:white;
+  display:flex;
+}
+
+.cont{
+  width:60%;
+  height:50%;
+  margin:auto;
+}
+
+.cont h3{
+  font-size:22px;
+}
+
+.cont p{
+  font-size:14px;
+  opacity:0.7;
+  width:80%;
+}
+
+/* Div before the footer */
+
+.blockseven{
+  height:500px;
+  display:flex;
+}
+.blockseven p{
+  color:grey;
+  opacity:0.8;
+   padding-bottom:20px;
+}
+
+#button{
+  color:white;
+  background-color:#2a7999;
+  border-radius:5px;
+  margin-left:0.5em;
+  padding:5px 20px 7px 20px;
+  text-transform: uppercase;
+}
+
+#button:hover{
+  background-color:white;
+  color:#2a7999;;
+  cursor:pointer;
+}
+
+/*Footer */
+
+footer{
+  color:gainsboro;
+  height:150px;
+  background-color:#373e46;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  font-size:14px;
+
+}
